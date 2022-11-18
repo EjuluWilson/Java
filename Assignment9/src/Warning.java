@@ -1,6 +1,5 @@
 // ************************************************************************
 // Warning.java
-//
 // Reads student data from a text file and writes data to another text file.
 // ************************************************************************
 
@@ -24,8 +23,8 @@ public class Warning {
 // Set up the output file stream
 // Print a header to the output file
             outFile.println();
-            outFile.println("Students on Academic
-                    Warning"); outFile.println ();
+            outFile.println("Students on Academic Warning");
+            outFile.println ();
 // Process the input file, one token at a time
             while () {
 // Get the credit hours and quality points and
@@ -34,8 +33,7 @@ public class Warning {
             }
 // Close output file
         } catch (FileNotFoundException exception) {
-            System.out.println("The file " + inputName + " was
-                    not found.");
+            System.out.println("The file " + inputName + " was not found.");
         } catch (IOException exception) {
             System.out.println(exception);
         } catch (NumberFormatException e) {
