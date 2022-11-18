@@ -14,10 +14,16 @@ public class ParseInts
         String line;
         System.out.println("Enter a line of text");
         Scanner scanLine = new Scanner(scan.nextLine());
-        while (scanLine.hasNext())
-        {
-            val = Integer.parseInt(scanLine.next());
-            sum += val;}
+
+
+            while (scanLine.hasNext()) {
+                try {
+                val = Integer.parseInt(scanLine.next());
+                sum += val;
+                }catch (Exception e){
+                }
+            }
+
         System.out.println("The sum of the integers on this line is "
                 + sum);
     }
